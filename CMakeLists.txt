@@ -148,7 +148,7 @@ add_executable(test_move src/test_move)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(test_move
+target_link_libraries(test_move
    ${catkin_LIBRARIES}
  )
 

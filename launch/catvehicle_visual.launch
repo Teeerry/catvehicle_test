@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <include file="$(find catvehicle)/launch/catvehicle_canyonview.launch"/>
+  <node name="gzclient" pkg="gazebo_ros" type="gzclient"/>
+  <!--rqt-graph-->
+  <!--node name="rqt_graph" pkg="rqt_graph" type="rqt_graph"/>  
+  <param name="enable_statistics" value="true"/--> 
+
+  <!--rviz-->
+  <arg name="rvizconfig" default="$(find catvehicle_test)/rviz/catvehicle.rviz" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+</launch>

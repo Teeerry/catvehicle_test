@@ -17,10 +17,10 @@ int main(int argc, char **argv)
     // 让小车一直前进,x有值，剩下的都是0
     while (ros::ok())  
     {                   
-        msg.linear.x = 0.2; 
+        msg.linear.x = 0.5; 
         msg.linear.y = 0.0;
         msg.linear.z = 0.0;
-        msg.angular.x = 1.0;
+        msg.angular.x = 0.0;
         msg.angular.y = 0.0;
         msg.angular.z = 0.0;
         

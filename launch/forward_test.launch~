@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<launch>
+  <include file="$(find catvehicle_test)/launch/catvehicle_visual.launch"/>
+
+  <node name="move_forward" pkg="catvehicle_test" type="test_move"/>
+
+</launch>

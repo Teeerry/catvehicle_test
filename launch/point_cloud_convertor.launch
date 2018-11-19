@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<launch>
+    <!-- start nodelet manager and driver nodelets -->
+    <include file="$(find velodyne_driver)/launch/nodelet_manager.launch" />
+    <!-- start transform nodelet -->
+    <include file="$(find velodyne_pointcloud)/launch/transform_nodelet.launch">
+        <arg name="calibration" value="$(find velodyne_pointcloud)/params/64e_utexas.yaml"/>
+    </include>
+</launch>

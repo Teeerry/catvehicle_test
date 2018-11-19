@@ -20,7 +20,7 @@ int main(int argc, char **argv)
         msg.linear.x = 0.5; 
         msg.linear.y = 0.0;
         msg.linear.z = 0.0;
-        msg.angular.x = 1.0;
+        msg.angular.x = 0.0;
         msg.angular.y = 0.0;
         msg.angular.z = 0.0;
         
